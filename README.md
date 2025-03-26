@@ -20,7 +20,7 @@ use case : Developers can package an application and its dependencies into a con
 
 # 4. What is the difference between docker run and docker start ?
    Docker run creates and starts a new container
-   Docker start and existing stopped container
+   Docker start an existing stopped container. it doesn,t create a new container
 
 # 5. How do you check running docker containers ?
     use docker ps for running containers and ps -a for all containers including stopped containers 
