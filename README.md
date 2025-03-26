@@ -93,6 +93,9 @@ use case : Developers can package an application and its dependencies into a con
     exam : docker run -d nginx1
 
 # 18 What is the difference between ENTRYPOINT AND CMD 
+   "ENTRYPOINT is used to define a mandatory command that always executes when the container starts, while CMD provides a 
+    default command that can be easily overridden when running the container. ENTRYPOINT is best for fixed behavior, whereas 
+    CMD is for default behavior that can be changed."
 
 
 
