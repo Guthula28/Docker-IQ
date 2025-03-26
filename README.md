@@ -26,7 +26,7 @@ use case : Developers can package an application and its dependencies into a con
     use docker ps for running containers and ps -a for all containers including stopped containers 
 
 # 6. What is the purpose of docker-compose ?
-  it simplifies multi-container application deployment using a YAML file
+   it simplifies multi-container application deployment using a YAML file
    example: 
         Version: "3"
          services :
@@ -53,7 +53,7 @@ use case : Developers can package an application and its dependencies into a con
     docker exec -it <container  eid> /bin/bash
 
 # 11. Explain docker volumes and their types ?
-    docker volumes store data outside the container lifecycle. 
+    Docker volumes store data outside the container lifecycle. 
       Types :
             Named Volumes : Managed by docker
             Bind mounts : Host file system paths
