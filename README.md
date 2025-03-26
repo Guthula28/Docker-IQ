@@ -45,6 +45,12 @@ use case : Developers can package an application and its dependencies into a con
    Exa: COPY source /app/source
         ADD archieve.tag.gz /app/archieve
 
+        COPY is used to copy only local files and directories into the container, 
+        while ADD has extra features: it can download files from URLs and automatically extract 
+       compressed archives (.tar.gz, etc.).
+
+Best Practice: Use COPY unless you need ADD’s additional features.
+
 # 9. How do you expose a port in docker container ?
    use the EXPOSE keyword in the docker file or -p in the docker run command
    Exa: EXPOSE 80
