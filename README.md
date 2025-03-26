@@ -1,7 +1,7 @@
 # Docker-IQ
 
 # 1 What is Docker ? 
-docker is an open Source platform for developing,shipping and running applications in lightweight containers.it ensures consistency across
+Docker is an open Source platform for developing,shipping and running applications in lightweight containers.it ensures consistency across
 environments
 use case : Developers can package an application and its dependencies into a container to run reliably in different environments
 
@@ -10,7 +10,7 @@ use case : Developers can package an application and its dependencies into a con
    Container : it is a running instance of docker image 
 
 # 3 How to you create a Docker image ? 
-   use a Docker file to define the build process and docker build to create the image
+   Use a Docker file to define the build process and docker build to create the image
    Example : 
        FROM ubuntu:latest
        RUN apt-get update && apt-get install -y curl
@@ -18,8 +18,8 @@ use case : Developers can package an application and its dependencies into a con
      docker build -t image 
 
 # 4 What is the difference between docker run and docker start ?
-   docker run creates and starts a new container
-   docker start and existing stopped container
+   Docker run creates and starts a new container
+   Docker start and existing stopped container
 
 # 5 How do you check running docker containers ?
     use docker ps for running containers and ps -a for all containers including stopped containers 
