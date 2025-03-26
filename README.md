@@ -1,6 +1,6 @@
 # Docker-IQ
 
-# 1 What is Docker ? 
+# 1. What is Docker ? 
 Docker is an open Source platform for developing,shipping and running applications in lightweight containers.it ensures consistency across
 environments
 use case : Developers can package an application and its dependencies into a container to run reliably in different environments
@@ -9,7 +9,7 @@ use case : Developers can package an application and its dependencies into a con
    image : Docker image in read only template contains set of instructions to create a container.
    Container : it is a running instance of docker image 
 
-# 3 How to you create a Docker image ? 
+# 3. How to you create a Docker image ? 
    Use a Docker file to define the build process and docker build to create the image
    Example : 
        FROM ubuntu:latest
@@ -17,14 +17,14 @@ use case : Developers can package an application and its dependencies into a con
        CMD ["echo",Hello Docker"]
      docker build -t image 
 
-# 4 What is the difference between docker run and docker start ?
+# 4. What is the difference between docker run and docker start ?
    Docker run creates and starts a new container
    Docker start and existing stopped container
 
-# 5 How do you check running docker containers ?
+# 5. How do you check running docker containers ?
     use docker ps for running containers and ps -a for all containers including stopped containers 
 
-# 6 What is the purpose of docker-compose ?
+# 6. What is the purpose of docker-compose ?
   it simplifies multi-container application deployment using a YAML file
    example: 
         Version: "3"
@@ -34,24 +34,24 @@ use case : Developers can package an application and its dependencies into a con
                ports:
                   -"8080:80"
 
-# 7 How to delete unused docker images ?
+# 7. How to delete unused docker images ?
    use docker image prune -a
    EX: docker image prune -f
 
-# 8 what is the difference between COPY AND ADD in docker file ?
+# 8. what is the difference between COPY AND ADD in docker file ?
    Both copy files to the image,but ADD supports additional features like extracting archieves 
    Exa: COPY source /app/source
         ADD archieve.tag.gz /app/archieve
 
-# 9 How do you expose a port in docker container ?
+# 9. How do you expose a port in docker container ?
    use the EXPOSE keyword in the docker file or -p in the docker run command
    Exa: EXPOSE 80
      Docker run -p 8080:80 nginx
 
-# 10 How do you log into a running Docker container ? 
+# 10. How do you log into a running Docker container ? 
     docker exec -it <container  eid> /bin/bash
 
-# 11 Explain docker volumes and their types ?
+# 11. Explain docker volumes and their types ?
     docker volumes store data outside the container lifecycle. 
       Types :
             Named Volumes : Managed by docker
@@ -59,7 +59,7 @@ use case : Developers can package an application and its dependencies into a con
       Example : docker volume create myvolume
                 docker run -v myvolume:/app/data nginx
 
-# 12 what is the purpose of docker network ?
+# 12. what is the purpose of docker network ?
    Docker networking is a feature that enables communication between containers.its essential for connecting containers each 
       other outside world. Types include
       Bridge
