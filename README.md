@@ -5,7 +5,7 @@ docker is an open Source platform for developing,shipping and running applicatio
 environments
 use case : Developers can package an application and its dependencies into a container to run reliably in different environments
 
-2. Explain the difference between image and containers ?
+# 2.Explain the difference between image and containers ?
    image : Docker image in read only template contains set of instructions to create a container.
    Container : it is a running instance of docker image 
 
