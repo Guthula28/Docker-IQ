@@ -1,6 +1,6 @@
 # Docker-IQ
 
-# What is Docker ? 
+# 1.What is Docker ? 
 docker is an open Source platform for developing,shipping and running applications in lightweight containers.it ensures consistency across
 environments
 use case : Developers can package an application and its dependencies into a container to run reliably in different environments
