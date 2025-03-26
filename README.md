@@ -68,7 +68,7 @@ use case : Developers can package an application and its dependencies into a con
       exa : docker network create mynetwork
             docker run --network mynetwork nginx   
 
-# 13 How do you build multi-stage Dockerfile ?
+# 13. How do you build multi-stage Dockerfile ?
     Multi-stage builds optimize image size by using Multiple FROM statements 
       FROM golang:alpine as builder
       RUN go build -o app main.go
@@ -76,23 +76,23 @@ use case : Developers can package an application and its dependencies into a con
       COPY --from=builder /app/app
       CMD ["/app']
 
-# 14 How do you limit container resources ?
+# 14. How do you limit container resources ?
     use flags like --memory and --cpus
       EXAM :    DOCKER RUN --memory=500m --cpus=1 nginx
 
-# 15 How do you troubleshoot a failing container ?
+# 15. How do you troubleshoot a failing container ?
     check logs : docker logs <containerid>
     inspect : docker inspect <container id>
 
-# 16 What is docker hub and how do you push image to it ? 
+# 16. What is docker hub and how do you push image to it ? 
      Docker hub is a Cloudbased registry service provided by docker allows users to find,store and share the container images
       docker push username/myimage
 
-# 17 How do you run container in detached mode ?
+# 17. How do you run container in detached mode ?
     use the -d flag
     exam : docker run -d nginx1
 
-# 18 What is the difference between ENTRYPOINT AND CMD 
+# 18. What is the difference between ENTRYPOINT AND CMD 
    "ENTRYPOINT is used to define a mandatory command that always executes when the container starts, while CMD provides a 
     default command that can be easily overridden when running the container. ENTRYPOINT is best for fixed behavior, whereas 
     CMD is for default behavior that can be changed."
