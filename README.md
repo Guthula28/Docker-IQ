@@ -7,6 +7,7 @@ use case : Developers can package an application and its dependencies into a con
 
 # 2. Explain the difference between image and containers ?
    image : Docker image in read only template contains set of instructions to create a container.
+   
    Container : it is a running instance of docker image 
 
 # 3. How to you create a Docker image ? 
